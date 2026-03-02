@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style_pg01.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Tarefas</h1>
+    </header>
+    <main>
+
+        <section class="container">
+            <form id="frml" >
+                <ul>
+                    <li id="cmp_01">
+                        <label for="nome"><h3>Titulo da tarefa</h3></label>
+                        <input type="text" id="nome" placeholder="titulo">
+                    </li>
+                    <li id="cmp_02">
+                        <label for="dscr">
+                            <h3>Descreva a tarefa:</h3>
+                        </label>
+                        <textarea id="dscr" placeholder="Ex: Comprar ovos"></textarea>
+                    </li>
+                    <li id="cmp_03">
+                        <button type="submit" id="btdr"><b>Enviar</b></button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <button type="button" id="vltr">Voltar</button>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script type="module" src="../js/script_pq01.js"></script>
+</html>

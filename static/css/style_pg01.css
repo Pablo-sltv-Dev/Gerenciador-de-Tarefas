@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(94, 89, 89);
+}
+@media (max-width:500px){
+    header{
+        width: 100vw;
+        height: 10vh ;
+        /* border: 1px solid red; */
+    }
+    header
+    h1{
+        /* border: 1px solid white; */
+        font-size: 25px;
+    }
+    main{
+        width: 100vw;
+        height: 70vh ;
+        /* border: 1px solid black; */
+        
+    }
+    main
+    .container{
+        /* border: 1px solid white; */
+        width: 100%;
+        height: 100%;
+        
+    }
+    .container
+    #frml{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 100%;
+            
+        }
+    #frml
+    ul{
+        /* border: 1px solid yellow; */
+                width: 100%;
+                height: 100%;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+    }
+    #frml
+    ul 
+    li{
+        margin-bottom: 25px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid #000; */
+}
+#frml
+ul 
+#cmp_01 
+label{
+    /* border: 1px solid red; */
+    width: 50%;
+    /* height: 50%; */
+    /* text-align: center; */
+    h3{
+        /* border: 1px solid white; */
+        width: 100%;
+        /* margin-left: 10%; */
+    }
+}
+#frml
+ul 
+#cmp_02
+label{
+    /* border: 1px solid red; */
+    width: 57%;
+    h3{
+        /* border: 1px solid white; */
+        width: 100%;
+        /* margin-left: 25%; */
+    }
+}
+
+#frml
+ul 
+#cmp_01
+input{
+    /* border: 1px solid red; */
+    width: 75%;
+    height: 25px;
+}
+
+#frml
+ul 
+#cmp_02
+textarea{
+    /* border: 1px solid red; */
+    width: 99%;
+    height: 100px;
+}
+
+#frml
+ul 
+#cmp_03{
+    display: flex;
+    justify-content: end;
+}
+#frml
+ul 
+#cmp_03
+button{
+    width: 25%;
+
+}
+
+
+
+    footer{
+        width: 100vw;
+        height: 10vh ;
+    }
+}
+
+

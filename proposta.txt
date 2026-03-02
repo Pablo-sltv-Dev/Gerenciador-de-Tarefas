@@ -1,0 +1,93 @@
+
+
+## 🧠 **Desafio: Gerenciador de Tarefas (To-Do App)**
+
+Você vai criar uma aplicação web simples, **sem frameworks**, usando apenas **HTML, CSS e JavaScript puro**.
+
+---
+
+## 📌 **Requisitos Funcionais (JavaScript)**
+
+1. O usuário deve conseguir:
+
+   * Adicionar uma nova tarefa (ok)
+   * Marcar a tarefa como **concluída** (__)
+   * Remover uma tarefa
+
+2. Regras:
+
+   * Não permitir adicionar tarefas vazias
+   * Mostrar uma mensagem se não houver tarefas
+   * Ao marcar como concluída, a tarefa deve mudar visualmente
+
+3. Extras (opcional, mas conta pontos 😈):
+
+   * Salvar as tarefas no `localStorage`
+   * Contador de tarefas (total e concluídas)
+   * Filtro: **Todas | Pendentes | Concluídas**
+
+---
+
+## 🎨 **Requisitos Visuais (CSS)**
+
+* Layout centralizado
+* Design limpo e organizado
+* Diferenciar visualmente:
+
+  * Tarefas concluídas
+  * Botões (hover, foco, etc.)
+* Usar pelo menos:
+
+  * Flexbox ou Grid
+  * Variáveis CSS (`:root`)
+
+---
+
+## 🧱 **Estrutura Mínima (HTML)**
+
+Seu HTML deve conter:
+
+* Um campo de texto
+* Um botão para adicionar
+* Uma lista de tarefas
+* Área para mensagens (ex: “Nenhuma tarefa adicionada”)
+
+---
+
+## 🧩 **Boas Práticas (avaliadas)**
+
+* Código JS organizado (funções claras)
+* Nomes de classes e variáveis semânticos
+* Separação correta de arquivos:
+
+  * `index.html`
+  * `style.css`
+  * `script.js`
+
+---
+
+## ⭐ **Desafio BÔNUS (nível avançado)**
+
+Escolha **um**:
+
+* Tema claro 🌞 / escuro 🌙 com botão de alternância
+* Animações suaves ao adicionar/remover tarefas
+* Responsividade perfeita para mobile
+
+---
+
+## 📤 **Como você pode me mostrar**
+
+Você pode:
+
+* Colar o código aqui
+* Mandar apenas o **JavaScript** para eu avaliar a lógica
+* Ou pedir para eu **avaliar como um recrutador** 👀
+
+Se quiser, posso:
+
+* Ajustar a dificuldade
+* Criar um desafio focado só em **JavaScript**
+* Ou te passar **critérios de correção** como se fosse uma prova
+
+Qual você prefere? 💪🔥

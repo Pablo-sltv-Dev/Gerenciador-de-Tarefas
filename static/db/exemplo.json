@@ -1,0 +1,11 @@
+[
+    {
+        "nome": "Pablo",
+        "idade": "não te interessa",
+        "trabalho": "Dev"
+    },
+    {
+        "nome": "teste manual",
+        "descricao": " Testando manualmente o salvamento dos arquivos em json"
+    }
+]
