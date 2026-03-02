@@ -14,19 +14,27 @@ function receber(dados){
 
 
 async function ler_arquivo() {
-    const arquivos = await fetch('../db/tarefas.json')
-    const resp_arquivos = await arquivos.json()
-    
-    
-    let contador = resp_arquivos.length
-    
-    let dados = resp_arquivos
-
-
-    for (dado in dados){
+    try{
+        const arquivos = await fetch('../db/tarefas.json')
+        if(!arquivos.ok){
+            throw new Error(`Erro ao buscar dados ${arguments.status}`)
+        }
+        const resp_arquivos = await arquivos.json()
         
-        receber(dados[dado])
+        let contador = resp_arquivos.length
+        
+        let dados = resp_arquivos
+    
+    
+        for (dado in dados){
+            
+            receber(dados[dado])
+        }
+    }catch(error){
+        console.error("Falaha ao buscar dados:", error.message)
     }
+    
+    
     
     
 
