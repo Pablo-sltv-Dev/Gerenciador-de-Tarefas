@@ -24,22 +24,13 @@ def carregar_dados(caminho):
     else:
         return False
 
-def salvar_dados(caminho, arquivo):
-    # try:
-    #     if bool(caminho) == None or bool(arquivo) == None:
-    #         raise
-    # except ValueError as error:
-    #     print(f"\n__ Está faltando um arquivo, ou o arquivo indentado está errado __\n__ ValueError: {error} __\n")
-    #     return False
-    # except TypeError as error:
-    #     print(f"\n__ Está falando um arquivo a ser indentado __\n__ TypeError: {error} __\n")
-    # else:
-    #     pass
+def salvar_dados(caminho, nvs_dados):
+    
 
-    arquivos = carregar_dados(caminho)
-    arquivos.append(arquivo)
+    # arquivos = []
+    # arquivos.append(arquivos)
     with open(caminho, 'w', encoding='utf-8') as f:
-        json.dump(arquivos, f, ensure_ascii=False, indent=4)
+        json.dump(nvs_dados, f, ensure_ascii=False, indent=4)
     return True
 
 dados = {
@@ -47,5 +38,34 @@ dados = {
     'descricao': ' Testando manualmente o salvamento dos arquivos em json'
 }
 
+
+def cmpr_dds(dados_web):
+    dados_atuais = carregar_dados(caminho='../static/db/tarefas.json')
+    procurando = False
+    while True:
+
+        for dados in dados_atuais:
+            if dados_web == dados['nome']:
+
+                procurando = True
+                nv_dados = dados
+                
+                dados_atuais.remove(nv_dados)
+                # nvo_dados_atuais = dados_atuais
+                
+                salvar_dados('../static/db/tarefas.json',dados_atuais)
+                break
+            else:
+                break
+        if procurando == False:
+            return False     
+        else:
+            pass
+        ot = carregar_dados('../static/db/concluidas.json')
+        ot.append(nv_dados)
+        salvar_dados('../static/db/concluidas.json', ot)
+        return True
 # print(salvar_dados('../static/db/exemplo.json', dd))    
 
+# print(carregar_dados('../static/db/tarefas.json'))
+# print(cmpr_dds('teste1'))

@@ -22,6 +22,18 @@ def receber_dados():
         return jsonify({"Menssage": "erro interno", "ok":False})
     # return jsonify({"mensage":"recebendo dados"})
 
+@app.route('/api/cmpr', methods=['POST'])
+def fz_cmpr():
+    dados = request.get_json()
+    rsp = cmpr_dds(dados)
+    if rsp == False:
+        return jsonify({"message":"error", "ok":False})
+    else:
+        return jsonify({"message":"Ok", "ok":True})
+        
+
+
+
 
 
 if __name__=='__main__':
